@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:math_game/homepage.dart';
+import 'package:math_game/mathlistpage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      home: const MathListPage(),
     );
   }
 }

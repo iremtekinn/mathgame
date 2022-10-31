@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-class MemoryCont extends StatefulWidget {
-  const MemoryCont({super.key});
+class TrainCont extends StatefulWidget {
+  const TrainCont({super.key});
 
   @override
-  State<MemoryCont> createState() => _MemoryContState();
+  State<TrainCont> createState() => _TrainContState();
 }
 
-class _MemoryContState extends State<MemoryCont> {
+class _TrainContState extends State<TrainCont> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -18,19 +18,20 @@ class _MemoryContState extends State<MemoryCont> {
         color: Colors.amber,
       gradient: LinearGradient(
         colors: [
-        Colors.yellow.shade200,
         Colors.yellow.shade100,
+        Colors.yellow.shade50,
        
       ], ),
       ),
-      margin:EdgeInsets.only(right:170),
+      margin:EdgeInsets.only(left:170),
       width:200,
       height:150,
       //color:Colors.red,
       child:Row(
         children: [
-         Image.asset("assets/perfume.png"),
-         Text("Memory Puzzle",style:TextStyle(color:Colors.orange,fontSize: 18,fontStyle: FontStyle.italic))
+        Image.asset("assets/brain.png"),
+         Text("Train your brain",style:TextStyle(color:Colors.orange,fontSize: 18,fontStyle: FontStyle.italic))
+         
         ],
       )
 

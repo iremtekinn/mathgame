@@ -5,7 +5,9 @@ import 'package:flutter/src/widgets/framework.dart';
 
 import 'package:math_game/widgets/appbarr.dart';
 import 'package:math_game/widgets/mathcont.dart';
+import 'package:math_game/widgets/memorycont.dart';
 import 'package:math_game/widgets/metin.dart';
+import 'package:math_game/widgets/traincont.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -35,7 +37,11 @@ class HomePage extends StatelessWidget {
               SizedBox(height:30),
               Metinn(),
               SizedBox(height: 10),
-              MathCont()
+              MathCont(),
+              SizedBox(height:10),
+              MemoryCont(),
+              SizedBox(height:10),
+              TrainCont()
               ],
         )
       )
