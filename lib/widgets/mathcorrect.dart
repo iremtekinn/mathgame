@@ -34,6 +34,7 @@ class _MathCorrectState extends State<MathCorrect> {
           bottomLeft: Radius.circular(40)
           )
       ),
+      padding: EdgeInsets.only(left:20),
       child:Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

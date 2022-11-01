@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:math_game/calculatorgamepage.dart';
 import 'package:math_game/homepage.dart';
 import 'package:math_game/mathlistpage.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         
         primarySwatch: Colors.blue,
       ),
-      home: const MathListPage(),
+      home: const CalculatorGamePage(),
     );
   }
 }

@@ -34,8 +34,10 @@ class _MAthCalState extends State<MAthCal> {
           bottomLeft: Radius.circular(40)
           )
       ),
+      padding: EdgeInsets.only(left:20),
       child:Column(
         crossAxisAlignment: CrossAxisAlignment.start,
+        
         children: [
           Text("Calculator",style:TextStyle(color:Colors.orange,fontSize:24)),
           Row(

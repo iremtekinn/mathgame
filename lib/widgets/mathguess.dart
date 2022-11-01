@@ -33,6 +33,7 @@ class _MathGuessState extends State<MathGuess> {
           bottomLeft: Radius.circular(40)
           )
       ),
+      padding: EdgeInsets.only(left:20),
       child:Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

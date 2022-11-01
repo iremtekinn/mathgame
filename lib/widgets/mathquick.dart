@@ -34,6 +34,7 @@ class _MathQuickState extends State<MathQuick> {
           bottomLeft: Radius.circular(40)
           )
       ),
+      padding: EdgeInsets.only(left:20),
       child:Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
