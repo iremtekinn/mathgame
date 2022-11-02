@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:math_game/widgets/calgameappbar.dart';
+import 'package:math_game/widgets/calgamebos.dart';
+import 'package:math_game/widgets/calgamefinish.dart';
+import 'package:math_game/widgets/calgametext.dart';
+import 'package:math_game/widgets/calgametus.dart';
 import 'package:math_game/widgets/caltime.dart';
 import 'package:math_game/widgets/caltime2.dart';
 
@@ -16,8 +20,9 @@ class _CalculatorGamePageState extends State<CalculatorGamePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:SingleChildScrollView(
-        child:Container(
+      body:Stack(
+        children: [
+          Container(
           width:500,
           height: 810,
           decoration: BoxDecoration(
@@ -31,12 +36,27 @@ class _CalculatorGamePageState extends State<CalculatorGamePage> {
           ),
           child:Column(
             children: [
+                     
               CalGameAppBar(),
+              SizedBox(height:10),
              // CalTime()
-             CalTime2()
+             CalTime2(),
+             SizedBox(height:10),
+             CalGameText(),
+             SizedBox(height:120),
+             CalGameBos(),
+             SizedBox(width:10),
+             CalGameTus(),
+            // CalGameFinish()
             ],
-          )
+            
+     
+          ),
+   
+
+
         )
+        ,CalGameFinish()],
       )
     );
   }

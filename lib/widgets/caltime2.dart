@@ -24,7 +24,7 @@ class _CalTime2State extends State<CalTime2> {
                 },
                 center: Text("90.0%"),
                 //linearStrokeCap: LinearStrokeCap.roundAll,
-                progressColor: Colors.greenAccent,
+                progressColor: Colors.orange.shade200,
               );
   }
 }
