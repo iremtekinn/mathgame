@@ -4,6 +4,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:math_game/widgets/calgameappbar.dart';
 import 'package:math_game/widgets/calgamebos.dart';
 import 'package:math_game/widgets/calgamefinish.dart';
+import 'package:math_game/widgets/calgamequit.dart';
 import 'package:math_game/widgets/calgametext.dart';
 import 'package:math_game/widgets/calgametus.dart';
 import 'package:math_game/widgets/caltime.dart';
@@ -56,7 +57,8 @@ class _CalculatorGamePageState extends State<CalculatorGamePage> {
 
 
         )
-        ,CalGameFinish()],
+        ,CalGameFinish(),
+        CalGameQuit()],
       )
     );
   }
