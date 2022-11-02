@@ -16,7 +16,7 @@ class _CalGameFinishState extends State<CalGameFinish> {
   @override
   Widget build(BuildContext context) {
     return Visibility(
-      visible:true,
+      visible:false,
       child:Align(
         alignment: Alignment.center,
         child:Container(

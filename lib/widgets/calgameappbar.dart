@@ -24,7 +24,10 @@ class _CalGameAppBarState extends State<CalGameAppBar> {
       child:Row(
        
         children: [
-          Icon(Icons.chevron_left),
+          InkWell(
+            onTap:()=>Navigator.pop(context),
+            child: Icon(Icons.chevron_left)
+            ),
           SizedBox(width:130),
           Image.asset("assets/stars.png"),
           SizedBox(width:10),

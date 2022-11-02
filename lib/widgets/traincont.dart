@@ -15,6 +15,7 @@ class _TrainContState extends State<TrainCont> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
+        border:Border.all(color:Colors.orange),
         color: Colors.amber,
       gradient: LinearGradient(
         colors: [

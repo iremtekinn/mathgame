@@ -13,20 +13,23 @@ class MathAppBar extends StatefulWidget {
 class _MathAppBarState extends State<MathAppBar> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: Colors.amber,
-      gradient: LinearGradient(
-        colors: [
-        Colors.yellow.shade200,
-        Colors.yellow.shade100,
-       
-      ], ),
+    return InkWell(
+      onTap:() => Navigator.pop(context),
+      child: Container(
+        decoration: BoxDecoration(
+          color: Colors.amber,
+        gradient: LinearGradient(
+          colors: [
+          Colors.yellow.shade200,
+          Colors.yellow.shade100,
+         
+        ], ),
+        ),
+        margin: EdgeInsets.only(right:260,top:40),
+        width:60,
+        height:70,
+        child:Icon(Icons.chevron_left,size:50)
       ),
-      margin: EdgeInsets.only(right:260,top:40),
-      width:60,
-      height:70,
-      child:Icon(Icons.chevron_left,size:50)
     );
   }
 }
