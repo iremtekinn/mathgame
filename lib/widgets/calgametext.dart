@@ -27,41 +27,71 @@ class _CalGameTextState extends State<CalGameText> {
       child: Row(
         
         children: [
-          Text("Calculator",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),),
+          Text("Calculator",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color:Color.fromARGB(255, 238, 149, 179)),),
           SizedBox(width:20),
           
           GestureDetector(
             onTap:() {
               showModalBottomSheet(context: context, 
-              builder: (BuildContext context ){
-                return Container(
-                  color:Colors.black,
-                  height:400,
-                  child:GestureDetector(
-                    onTap: (){
-                      Navigator.pop(context);
-                    },
-                    child:Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(30),
-                        color:Colors.yellow.shade200,
+              backgroundColor: Colors.yellow.shade100,
+              shape:RoundedRectangleBorder(
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(20),
+                  topRight:Radius.circular(20)
+                )
+              ),
+              builder:(BuildContext context){
+                return Column(
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.only(top:10),
+                      child:Text("Quick Calculation")
                       ),
-                      width:50,
-                      height:50,
-                      child:Center(
+                      Padding(
+                        padding: EdgeInsets.only(top:10),
                         child:Container(
-                          alignment:Alignment.center,
-                          width:100,
-                          height:50,
+                          width:350,
+                          height:200,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            color:Colors.orange.shade200,
+                            image:DecorationImage(image: AssetImage("assets/calculator_intro.gif"),
+                            fit:BoxFit.fill
+                            )
                           ),
-                          child:Text("Close")
                         )
-                      )
-                    )
-                  )
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(top:10),
+                          child:Text("Solve simple equation one by one")
+                          ),
+                          Text("Faster you solve more time will be"),
+                          Text("given to solve next equation"),
+                          Padding(padding: EdgeInsets.only(top:10),
+                          child:Text("1.0 for correct answer")
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(bottom:10),
+                            child:Text("1.0 for wrong answer")
+                            ),
+                            GestureDetector(
+                              onTap:() {
+                                Navigator.pop(context);
+                              },
+                              child:Center(
+                                child:Container(
+                                  alignment: Alignment.center,
+                                  width:200,
+                                  height:40,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10),
+                                    color:Colors.orange.shade100
+                                  ),
+                                  child:Text("Close")
+                                )
+                              )
+                            )
+                          
+                  ],
                 );
               }
               );

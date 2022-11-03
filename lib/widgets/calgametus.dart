@@ -46,7 +46,9 @@ class _CalGameTusState extends State<CalGameTus> {
               borderRadius: BorderRadius.circular(10),
               color:Colors.orange.shade200,
             ),
-            child:Text(numbers[index])
+            child:Text(numbers[index],
+            style: TextStyle(color:Color.fromARGB(255, 238, 149, 179),fontSize: 18,fontWeight: FontWeight.bold),
+            )
           );
           
         }),

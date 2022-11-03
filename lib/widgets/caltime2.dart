@@ -14,7 +14,10 @@ class _CalTime2State extends State<CalTime2> {
   @override
   Widget build(BuildContext context) {
     return LinearPercentIndicator(
-                width: 300,
+      padding: EdgeInsets.only(left: 40),
+      barRadius: Radius.circular(10),
+      isRTL: true,
+                width: 350,
                 animation: true,
                 lineHeight: 20.0,
                 animationDuration: 60000,
@@ -22,9 +25,10 @@ class _CalTime2State extends State<CalTime2> {
                 onAnimationEnd: () {
                   
                 },
-                center: Text("90.0%"),
+                //center: Text("90.0%"),
                 //linearStrokeCap: LinearStrokeCap.roundAll,
                 progressColor: Colors.orange.shade200,
+                backgroundColor:Color.fromARGB(255, 238, 149, 179),
               );
   }
 }
